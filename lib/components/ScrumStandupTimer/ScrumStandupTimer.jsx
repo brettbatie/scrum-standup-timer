@@ -4,7 +4,7 @@ var React = require('react'),
   hotkey = require('react-hotkey'),
   ScrumStandupTimer,
   SPACEBAR_KEY_CODE = 32,
-  COUNTDOWN_IN_MS = 30 * 1000,
+  COUNTDOWN_IN_MS = 60 * 1000,
   INTERVAL_INCREMENT = 100,
   QUESTIONS = [
     'What did you do yesterday?',
@@ -86,7 +86,7 @@ module.exports = ScrumStandupTimer = React.createClass({
     return (
       <div className='ScrumStandupTimer'>
         <div className='question'>
-          <p>{QUESTIONS[this.state.questionIndex]}</p>
+            <div>What did you do yesterday?</div><div>What will you do today?</div><div>Are you blocked?</div>
         </div>
 
         <div className="bottom">
